@@ -1,5 +1,7 @@
-### 参考ななる repository
+### 参考になる記事
 
-- [NestJS 公式ドキュメント ver7 日本語訳] (https://zenn.dev/kisihara_c/books/nest-officialdoc-jp)
+- [NestJS 公式ドキュメント ver7 日本語訳](https://zenn.dev/kisihara_c/books/nest-officialdoc-jp)
 
-- [prisma/prisma-examples] (https://github.com/prisma/prisma-examples/tree/latest/typescript/rest-nestjs)
+### 参考になる Repository
+
+- [prisma/prisma-examples](https://github.com/prisma/prisma-examples/tree/latest/typescript/rest-nestjs)
