@@ -6,12 +6,12 @@ import { User as UserModel, Post as PostModel } from '@prisma/client';
 export class UserController {
   constructor(private readonly prismaService: PrismaService) {}
 
-  @Get() //確認
+  @Get()
   async getAllUsers(): Promise<UserModel[]> {
     return this.prismaService.user.findMany();
   }
 
-  @Get(':id/drafts') //確認
+  @Get(':id/drafts')
   async getDraftsByUser(@Param('id') id: string): Promise<PostModel[]> {
     return this.prismaService.user
       .findUnique({
