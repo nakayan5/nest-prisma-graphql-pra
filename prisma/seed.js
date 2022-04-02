@@ -37,64 +37,20 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 };
 exports.__esModule = true;
 var client_1 = require("@prisma/client");
+var user_1 = require("./mock/user");
 var prisma = new client_1.PrismaClient();
-var userData = [
-    {
-        name: 'Alice',
-        email: 'alice@prisma.io',
-        posts: {
-            create: [
-                {
-                    title: 'Join the Prisma Slack',
-                    content: 'https://slack.prisma.io',
-                    published: true
-                },
-            ]
-        }
-    },
-    {
-        name: 'Nilu',
-        email: 'nilu@prisma.io',
-        posts: {
-            create: [
-                {
-                    title: 'Follow Prisma on Twitter',
-                    content: 'https://www.twitter.com/prisma',
-                    published: true
-                },
-            ]
-        }
-    },
-    {
-        name: 'Mahmoud',
-        email: 'mahmoud@prisma.io',
-        posts: {
-            create: [
-                {
-                    title: 'Ask a question about Prisma on GitHub',
-                    content: 'https://www.github.com/prisma/prisma/discussions',
-                    published: true
-                },
-                {
-                    title: 'Prisma on YouTube',
-                    content: 'https://pris.ly/youtube'
-                },
-            ]
-        }
-    },
-];
 function main() {
     return __awaiter(this, void 0, void 0, function () {
-        var _i, userData_1, u, user;
+        var _i, USER_MOCK_SAMPLE_02_1, u, user;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
                     console.log("Start seeding ...");
-                    _i = 0, userData_1 = userData;
+                    _i = 0, USER_MOCK_SAMPLE_02_1 = user_1.USER_MOCK_SAMPLE_02;
                     _a.label = 1;
                 case 1:
-                    if (!(_i < userData_1.length)) return [3 /*break*/, 4];
-                    u = userData_1[_i];
+                    if (!(_i < USER_MOCK_SAMPLE_02_1.length)) return [3 /*break*/, 4];
+                    u = USER_MOCK_SAMPLE_02_1[_i];
                     return [4 /*yield*/, prisma.user.create({
                             data: u
                         })];
